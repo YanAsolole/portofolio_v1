@@ -1,0 +1,979 @@
+/* css Default */
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+:root {
+  --background-color: rgb(0, 0, 0);
+  --background-color-blur: rgba(131, 127, 127, 0.171);
+  --kuning: #fdc435;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* background-color: rebeccapurple; */
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+/* css default */
+
+/* Start css navbar */
+nav {
+  color: white;
+  background-color: var(--background-color-blur);
+  font-family: "Michroma", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  padding: 10px;
+}
+/* Tampilkan daftar navigasi saat tombol hamburger diklik */
+.menu-toggle {
+  display: none;
+}
+
+nav .logonama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+nav .logonama a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* Tambahkan CSS untuk tombol hamburger dan sembunyikan daftar navigasi */
+
+/* CSS tombol hamburger */
+
+nav .nav-list ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 4rem;
+}
+nav .nav-list ul li {
+  list-style-type: none;
+  padding: 15px;
+}
+nav .nav-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* end css Navbar */
+
+/* start css Main */
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.text {
+  width: 500px;
+  display: block;
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+}
+.text span {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  font-size: 20px;
+  bottom: 2rem;
+  font-weight: bold;
+  color: var(--kuning);
+}
+.text h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.7rem;
+}
+.text p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+.text .button {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.text .button .project {
+  text-decoration: none;
+  color: white;
+  background-color: var(--kuning);
+  border-radius: 12px;
+  padding: 10px;
+}
+.text .button .about {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 9px;
+  margin-left: 20px;
+}
+.motifkuning {
+  display: flex;
+  z-index: -3;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.orang {
+  position: absolute;
+  top: 5rem;
+  right: 7rem;
+  z-index: -1;
+}
+.orang img {
+  height: 70vh;
+}
+.boxhide {
+  position: absolute;
+  top: 590px;
+  right: 0;
+  background-color: var(--background-color);
+  width: 400px;
+  height: 50px;
+  z-index: -1;
+}
+/* end css Main */
+
+/* Start Css About */
+.aboutt {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+.aboutt .content {
+  display: flex;
+}
+.aboutt .wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  color: white;
+}
+.aboutt .wrap h3 {
+  font-size: 4rem;
+  position: absolute;
+  float: left;
+  top: 15rem;
+  left: 40px;
+}
+.aboutt .wrap h3 span {
+  color: var(--kuning);
+}
+.aboutt .wrap p {
+  position: absolute;
+  font-size: 1.2rem;
+  width: 400px;
+  float: left;
+  top: 21rem;
+  left: 40px;
+}
+.aboutt .pict {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.aboutt .pict .motif {
+  position: absolute;
+  top: 80px;
+}
+.aboutt .pict .vector {
+  position: absolute;
+  display: flex;
+  top: 300px;
+  left: 100px;
+}
+/* End Css About */
+
+/* start css Projectt */
+.projectt {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: var(--  background-color); */
+  background-image: url(../image/motif.png);
+  background-size: auto;
+  position: relative;
+}
+.projectt h1 {
+  font-size: 3.5rem;
+  position: absolute;
+  left: 67px;
+  color: white;
+  margin-top: 100px;
+  background-color: var(--background-color);
+  padding: 15px;
+  /* border-radius: 20px; */
+}
+.projectt h1 span {
+  color: var(--kuning);
+}
+
+.projectt .container-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 400px;
+  /* width: 100%; */
+  background: var(--background-color-blur);
+  border-radius: 12px;
+  padding: 50px;
+  margin: 0 auto;
+  /* margin-top: 20%; */
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  /* justify-content: center; */
+  scroll-padding: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.projectt .container-card .card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.projectt .container-card .card .image {
+  height: 150px;
+  width: 300px;
+  padding: 4px;
+  /* background: #4070f4; */
+  /* border-radius: 50%; */
+}
+.projectt .container-card .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  border: 5px solid #fff;
+}
+.card h2 {
+  margin-top: 25px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+.card p {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.projectt .container-card .card a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/* end css projectt */
+
+/* Start css Contact */
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.contact .content {
+  display: flex;
+  width: 100%;
+}
+/* .contact .content .container-left{
+
+} */
+.contact .content .container-left h1 {
+  font-size: 3.5rem;
+  position: absolute;
+  left: 110px;
+  color: white;
+  margin-top: 120px;
+  background-color: var(--background-color);
+  padding: 15px;
+}
+.contact .content .container-left h1 span {
+  color: var(--kuning);
+}
+.contact .content .container-left img {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+/* .contact .content .container-right{
+
+} */
+.contact .content .container-right form {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+}
+form .box-slide {
+  display: flex;
+  /* flex-direction: column; */
+}
+form .box-slide .box {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+form .box-slide label {
+  color: white;
+}
+form .box-slide input {
+  padding: 14px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+form .box-column {
+  display: flex;
+  flex-direction: column;
+}
+form .box-column label {
+  color: white;
+  margin-left: 15px;
+}
+form .box-column textarea {
+  width: 90%;
+  margin-left: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+form .button input {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background-color: var(--kuning);
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+/* end css contact */
+
+/* start css Footer */
+footer {
+  background-color: var(--background-color);
+  color: white;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+footer .icon {
+  display: flex;
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  right: 0;
+  font-size: 20px;
+  align-items: center;
+  gap: 60px;
+}
+footer .icon .icon-body {
+  margin-bottom: 12px;
+}
+footer .icon .icon-body a {
+  text-decoration: none;
+  color: white;
+}
+footer .sosmed-container {
+  position: relative;
+  display: flex;
+  margin-left: 41.5%;
+  top: 130px;
+  gap: 35px;
+}
+footer .sosmed-container .sosmed {
+  display: flex;
+  /* padding: 20px; */
+  width: 60px;
+  height: 60px;
+  background-color: var(--background-color-blur);
+  border-radius: 100%;
+  /* font-size: 50px; */
+  align-items: center;
+  position: relative;
+}
+footer .sosmed-container .sosmed .facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer .sosmed-container .sosmed .instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .sosmed-container .sosmed .twitter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .sosmed-container .sosmed .youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .sosmed-container .sosmed .facebook a ion-icon {
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+  /* text-align: center;s */
+}
+footer .sosmed-container .sosmed .twitter a ion-icon {
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+  /* text-align: center;s */
+}
+footer .sosmed-container .sosmed .instagram a ion-icon {
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+  /* text-align: center;s */
+}
+footer .sosmed-container .sosmed .youtube a i {
+  font-size: 30px;
+  color: white;
+  margin: 0 auto;
+  /* text-align: center;s */
+}
+footer .sosmed-container .sosmed .facebook a,
+.instagram a,
+.twitter a,
+.youtube a {
+  text-decoration: none;
+  color: white;
+}
+footer .sosmed-container .sosmed:hover {
+  background-color: var(--kuning);
+  transition: all 0.5s;
+}
+footer p {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+/* end css footer */
+
+/* responsive */
+/* CSS Navbar yang sudah ada */
+
+/* Tambahkan CSS untuk layar kecil (misalnya, ponsel) */
+@media (max-width: 900px) {
+  nav .menu-toggle {
+    display: flex;
+    /* font-size: 20px; */
+    cursor: pointer;
+  }
+  .menu-toggle ion-icon {
+    font-size: 40px;
+  }
+  nav .nav-list {
+    position: absolute;
+    top: 100%;
+    padding-left: 80px;
+    /* left: 50%; */
+    align-items: center;
+    justify-content: center;
+    right: -100%;
+    background-color: var(--background-color-blur);
+    /* width: 100%; */
+    height: 100vh;
+    transition: 2s all ease-in-out;
+    /* display: none; Sembunyikan daftar navigasi */
+  }
+  .nav-list.active {
+    right: 0;
+    /* display: block; Tampilkan daftar navigasi saat kelas "active" diterapkan pada elemen "nav" */
+  }
+  nav {
+    /* flex-direction: colu; */
+    align-items: flex-start;
+    padding: 10px 20px; /* Sesuaikan dengan kebutuhan Anda */
+  }
+
+  nav .logonama {
+    margin-left: 0;
+    padding-top: 10px;
+    margin-bottom: 0; /* Tambahkan jarak antara logo dan daftar navigasi */
+  }
+
+  nav .nav-list {
+    margin-right: 0;
+  }
+
+  nav .nav-list ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-list ul li {
+    padding: 10px 0;
+  }
+  .text {
+    width: 500px;
+    top: 5rem;
+    left: 4rem;
+  }
+  .text span {
+    font-size: 2rem;
+    top: 20px;
+    bottom: 0;
+  }
+  .text h1 {
+    padding-top: 60px;
+    font-size: 3rem;
+  }
+  .text p {
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+  .text .button {
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+  .motifkuning {
+    display: none;
+  }
+  .orang {
+    display: none;
+  }
+  .boxhide {
+    display: none;
+  }
+  .projectt h1 {
+    left: 100px;
+    padding-left: 30px;
+    /* padding-right: 200px; */
+    width: 500px;
+    /* background-color: ; */
+  }
+  .aboutt .wrap h3 {
+    font-size: 5rem;
+  }
+  .aboutt .wrap p {
+    padding-top: 20px;
+    font-size: 2rem;
+    width: 500px;
+  }
+  .aboutt .pict .vector {
+    display: none;
+  }
+  .aboutt .pict .motif img {
+    display: none;
+  }
+  /* .aboutt .content{
+    display: flex;
+  } */
+  .contact .content .container-left img {
+    display: none;
+  }
+  .contact .content .container-right form {
+    top: 300px;
+    right: 180px;
+    gap: 20px;
+  }
+  /* start css Footer */
+  footer {
+    background-color: var(--background-color);
+    color: white;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+  }
+  footer .icon {
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    right: 0;
+    font-size: 20px;
+    align-items: center;
+    gap: 60px;
+  }
+  footer .icon .icon-body {
+    margin-bottom: 12px;
+  }
+  footer .icon .icon-body a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .sosmed-container {
+    position: relative;
+    display: flex;
+    margin-left: 35%;
+    top: 130px;
+    gap: 35px;
+  }
+  footer .sosmed-container .sosmed {
+    display: flex;
+    /* padding: 20px; */
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color-blur);
+    border-radius: 100%;
+    /* font-size: 50px; */
+    align-items: center;
+    position: relative;
+  }
+  footer .sosmed-container .sosmed .facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  footer .sosmed-container .sosmed .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .facebook a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .twitter a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .instagram a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .youtube a i {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .facebook a,
+  .instagram a,
+  .twitter a,
+  .youtube a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .sosmed-container .sosmed:hover {
+    background-color: var(--kuning);
+    transition: all 0.5s;
+  }
+  footer p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
+  /* end css footer */
+}
+@media (max-width: 425px) {
+  nav .menu-toggle {
+    display: flex;
+    /* font-size: 20px; */
+    cursor: pointer;
+  }
+  .menu-toggle ion-icon {
+    font-size: 40px;
+  }
+  nav .nav-list {
+    position: absolute;
+    top: 100%;
+    padding-left: 80px;
+    /* left: 50%; */
+    align-items: center;
+    justify-content: center;
+    right: -100%;
+    background-color: var(--background-color-blur);
+    /* width: 100%; */
+    height: 100vh;
+    transition: 2s all ease-in-out;
+    /* display: none; Sembunyikan daftar navigasi */
+  }
+  .nav-list.active {
+    right: 0;
+    /* display: block; Tampilkan daftar navigasi saat kelas "active" diterapkan pada elemen "nav" */
+  }
+  nav {
+    /* flex-direction: colu; */
+    align-items: flex-start;
+    padding: 10px 20px; /* Sesuaikan dengan kebutuhan Anda */
+  }
+
+  nav .logonama {
+    margin-left: 0;
+    padding-top: 10px;
+    margin-bottom: 0; /* Tambahkan jarak antara logo dan daftar navigasi */
+  }
+
+  nav .nav-list {
+    margin-right: 0;
+  }
+
+  nav .nav-list ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .nav-list ul li {
+    padding: 10px 0;
+  }
+  .text {
+    width: 200px;
+    top: 5rem;
+    left: 3rem;
+  }
+  .text span {
+    font-size: 15px;
+    top: 20px;
+    bottom: 0;
+  }
+  .text h1 {
+    padding-top: 60px;
+    font-size: 20px;
+  }
+  .text p {
+    padding-top: 50px;
+    font-size: 1.2rem;
+  }
+  .text .button {
+    font-size: 0.9rem;
+  }
+  .motifkuning {
+    display: none;
+  }
+  .orang {
+    display: none;
+  }
+  .boxhide {
+    display: none;
+  }
+  .projectt h1 {
+    left: 0;
+    font-size: 2.5rem;
+    padding-left: 30px;
+    /* padding-right: 200px; */
+    width: 500px;
+    /* background-color: ; */
+  }
+  .aboutt .wrap h3 {
+    font-size: 2.5rem;
+  }
+  .aboutt .wrap p {
+    padding-top: 20px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  .aboutt .pict .vector {
+    display: none;
+  }
+  .aboutt .pict .motif img {
+    display: none;
+  }
+  /* .aboutt .content{
+    display: flex;
+  } */
+  .contact .content .container-left img {
+    display: none;
+  }
+  .contact .content .container-right form {
+    top: 300px;
+    right: 0;
+    gap: 20px;
+    display: block;
+  }
+  .contact .content .container-left h1 {
+    font-size: 3rem;
+    position: absolute;
+    left: 4rem;
+    color: white;
+    margin-top: 120px;
+    background-color: var(--background-color);
+    padding: 15px;
+  }
+  form .box-slide input {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+  }
+  form .box-slide{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  form .box-column textarea {
+    width: 70%;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+  }
+  footer {
+    background-color: var(--background-color);
+    color: white;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+  }
+  footer .icon {
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    right: 0;
+    font-size: 15px;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .icon .icon-body {
+    margin-bottom: 0;
+  }
+  footer .icon .icon-body a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .sosmed-container {
+    position: relative;
+    display: flex;
+    margin-left: 2.3rem;
+    top: 7rem;
+    gap: 20px;
+  }
+  footer .sosmed-container .sosmed {
+    display: flex;
+    /* padding: 20px; */
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color-blur);
+    border-radius: 100%;
+    /* font-size: 50px; */
+    align-items: center;
+    position: relative;
+  }
+  footer .sosmed-container .sosmed .facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  footer .sosmed-container .sosmed .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  footer .sosmed-container .sosmed .facebook a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .twitter a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .instagram a ion-icon {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .youtube a i {
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    /* text-align: center;s */
+  }
+  footer .sosmed-container .sosmed .facebook a,
+  .instagram a,
+  .twitter a,
+  .youtube a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .sosmed-container .sosmed:hover {
+    background-color: var(--kuning);
+    transition: all 0.5s;
+  }
+  footer p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+  }
+}
+
+/* end responsive */
